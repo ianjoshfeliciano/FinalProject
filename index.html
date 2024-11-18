@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #0161c87e);
+        }
+
+        header {
+            background: radial-gradient(circle, #12457c, #4d91d8);
+            color: white;
+            animation: fadeIn 2s;
+        }
+
+        footer {
+            background: #0056b3;
+            color: white;
+            animation: fadeInUp 2s;
+        }
+
+        .navbar {
+            animation: slideIn 1.5s;
+        }
+
+        nav .nav-link:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+
+        section {
+            padding: 60px 0;
+            
+        }
+
+        #work, #achievements {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #work ul, #achievements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #work ul li, #achievements ul li {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        #work ul li:hover, #achievements ul li:hover {
+            transform: translateY(-5px) scale(1.05);
+            background: #e0f7fa;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.5);
+        }
+
+        .carousel-item img{
+        
+            max-height: 400px;
+            height: auto;
+            width: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .carousel-item video {
+            width: 100%;       
+            height: auto;  
+            max-height: 400px;   
+            border-radius: 10px;
+            display: block;     
+            margin: 0 auto;      
+}
+        @media (min-width: 992px) {
+            .carousel-item img {
+                max-height: 600px;
+                width: auto;
+            }
+        }
+
+        .carousel {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        #skills .row div:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#about">Ian Feliciano</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#talents">Hobbies & Talents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center py-5">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover more about me, my talents, and my skills!</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">Hello! I'm Ian Josh M. Feliciano, a passionate tech enthusiast, smart guy, has a good sense of humor,</p>
+        <p class="text-center">lover boy, love dogs, has a great leadership skills and creative individual.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">My Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Programming</h4>
+                    <p>Python, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>IT Skills</h4>
+                    <p>Database Management, Networking, Hardware skills</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Web Development</h4>
+                    <p>Bootstrap, JQuery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work">
+        <div>
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Service crew/Cashier/fryman - Mcdonald's at San Joaquin Elisco road, Pasig City</li>
+                <li>Barista/Pizza man/Delivery rider - LoCocino at Greenwoods Ave, Pasig City  </li>
+                <li>Tech Support(Call Center Agent) - Concentrix at Megamall Ortigas center, Mandaluyong</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div>
+            <h2>Achievements</h2>
+            <ul>
+                <li>consistent with honors - Gr.11 & Gr. 12</li>
+                <li>COMPUTER SYSTEMS SERVICING NCII Passer</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hobbies & Talents Section -->
+    <section id="talents" class="container my-5">
+        <h2 class="text-center">Hobbies & Talents</h2>
+        <h5 class="text-center text-muted">Photography, Videography/editing, Playing Guitar</h5>
+        <div id="talentCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Image 1 -->
+                <div class="carousel-item active">
+                    <img src="1.JPG" alt="Talent Image 1" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 2 -->
+                <div class="carousel-item">
+                    <img src="2.JPG" alt="Talent Image 2" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 3 -->
+                <div class="carousel-item">
+                    <img src="3.JPG" alt="Talent Image 3" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 4 -->
+                <div class="carousel-item">
+                    <img src="4.JPG" alt="Talent Image 4" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 5 -->
+                <div class="carousel-item">
+                    <img src="5.jpg" alt="Talent Image 5" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 6 -->
+                <div class="carousel-item">
+                    <img src="6.JPG" alt="Talent Image 6" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 7 -->
+                <div class="carousel-item">
+                    <img src="7.JPG" alt="Talent Image 7" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 8 -->
+                <div class="carousel-item">
+                    <img src="8.JPG" alt="Talent Image 8" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 9 -->
+                <div class="carousel-item">
+                    <img src="9.JPG" alt="Talent Image 9" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 10 -->
+                <div class="carousel-item">
+                    <img src="10.JPG" alt="Talent Image 10" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Image 11 -->
+                <div class="carousel-item">
+                    <img src="11.jpg" alt="Talent Image 11" class="d-block w-100 img-fluid">
+                </div>
+                <!-- Video 1 -->
+                <div class="carousel-item">
+                    <div class="video-container text-center">
+                        <video id="talentVideo1" class="d-block w-100" muted>
+                            <source src="1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-controls mt-2">
+                            <button class="btn btn-primary btn-sm" onclick="togglePlayPause('talentVideo1')">Play</button>
+                            <button class="btn btn-secondary btn-sm" onclick="toggleMute('talentVideo1')">Mute</button>
+                            <input type="range" id="volumeSlider1" min="0" max="1" step="0.1" value="0.5"
+                                onchange="adjustVolume(this, 'talentVideo1')" class="form-range w-25">
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="carousel-item">
+                    <div class="video-container text-center">
+                        <video id="talentVideo2" class="d-block w-100" muted>
+                            <source src="2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-controls mt-2">
+                            <button class="btn btn-primary btn-sm" onclick="togglePlayPause('talentVideo2')">Play</button>
+                            <button class="btn btn-secondary btn-sm" onclick="toggleMute('talentVideo2')">Mute</button>
+                            <input type="range" id="volumeSlider2" min="0" max="1" step="0.1" value="0.5"
+                                onchange="adjustVolume(this, 'talentVideo2')" class="form-range w-25">
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="carousel-item">
+                    <div class="video-container text-center">
+                        <video id="talentVideo3" class="d-block w-100" muted>
+                            <source src="3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-controls mt-2">
+                            <button class="btn btn-primary btn-sm" onclick="togglePlayPause('talentVideo3')">Play</button>
+                            <button class="btn btn-secondary btn-sm" onclick="toggleMute('talentVideo3')">Mute</button>
+                            <input type="range" id="volumeSlider3" min="0" max="1" step="0.1" value="0.5"
+                                onchange="adjustVolume(this, 'talentVideo3')" class="form-range w-25">
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="carousel-item">
+                    <div class="video-container text-center">
+                        <video id="talentVideo4" class="d-block w-100" muted>
+                            <source src="4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-controls mt-2">
+                            <button class="btn btn-primary btn-sm" onclick="togglePlayPause('talentVideo4')">Play</button>
+                            <button class="btn btn-secondary btn-sm" onclick="toggleMute('talentVideo4')">Mute</button>
+                            <input type="range" id="volumeSlider4" min="0" max="1" step="0.1" value="0.5"
+                                onchange="adjustVolume(this, 'talentVideo4')" class="form-range w-25">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#talentCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#talentCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="text-center py-4">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Ianjosh.F/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/dpw.ian_/" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@ian_feliciano?is_from_webapp=1&sender_device=pc" target="_blank"><img src="tiktok.png" alt="Tiktok"></a>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Ian Josh M. Feliciano. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navbar links
+            $('.navbar-nav .nav-link').on('click', function(e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 500, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            
+        });
+    </script>
+    <!-- JavaScript for Video Controls -->
+    <script>
+        function togglePlayPause(videoId) {
+            const video = document.getElementById(videoId);
+            const button = event.target;
+
+            if (video.paused) {
+                video.play();
+                video.muted = false;
+                button.innerText = "Pause";
+            } else {
+                video.pause();
+                button.innerText = "Play";
+            }
+        }
+
+        function toggleMute(videoId) {
+            const video = document.getElementById(videoId);
+            const button = event.target;
+
+            video.muted = !video.muted;
+            button.innerText = video.muted ? "Unmute" : "Mute";
+        }
+
+        function adjustVolume(slider, videoId) {
+            const video = document.getElementById(videoId);
+            video.volume = slider.value;
+        }
+    </script>
+</body>
+</html>
